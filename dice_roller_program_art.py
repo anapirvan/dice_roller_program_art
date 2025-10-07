@@ -44,8 +44,9 @@ for die in range(num_of_dice):
 for die in range(num_of_dice):
     total += dice[die]
 
-for die in range(num_of_dice):
-    for line in dice_art[dice[die]]:
-        print(line)
+for line in range(5):
+    for die in dice:
+        print(dice_art[die][line], end="")
+    print()
 
 print(f"total: {total}")
